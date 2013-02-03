@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF191919"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/icon2"
+        android:height="80dp"
+        android:width="80dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginRight="31dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@drawable/icon1"
+        android:height="80dp"
+        android:width="80dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="37dp"
+        android:background="#FFFFE0"
+        android:ems="10"
+        android:height="80dp"
+        android:inputType="textMultiLine"
+        android:width="300dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:background="#FFFFE0"
+        android:ems="10"
+        android:height="20dp"
+        android:width="480dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_marginBottom="28dp"
+        android:background="#FFFFE0"
+        android:ems="10"
+        android:height="650dp"
+        android:inputType="textMultiLine"
+        android:width="520dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignRight="@+id/editText2"
+        android:background="@drawable/searchbutton"
+        android:height="20dp"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:width="20dp" />
+
+</RelativeLayout>
