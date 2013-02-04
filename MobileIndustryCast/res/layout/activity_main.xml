@@ -6,25 +6,14 @@
     android:background="#FF191919"
     tools:context=".MainActivity" >
 
-    <EditText
-        android:id="@+id/messageTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/sendBtn"
-        android:background="#FFFFE0"
-        android:ems="10"
-        android:height="80dp"
-        android:inputType="textMultiLine"
-        android:width="300dp" />
-
     <Button
         android:id="@+id/broadcastBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/chatLog"
+        android:layout_alignBaseline="@+id/sendBtn"
+        android:layout_alignBottom="@+id/sendBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="31dp"
         android:background="@drawable/icon2"
         android:height="80dp"
         android:width="80dp" />
@@ -33,27 +22,40 @@
         android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignBaseline="@+id/messageTxt"
+        android:layout_alignBottom="@+id/messageTxt"
+        android:layout_marginRight="41dp"
         android:layout_toLeftOf="@+id/broadcastBtn"
         android:background="@drawable/icon1"
         android:height="80dp"
-        android:width="80dp"
-        android:onClick="sendMessage"/>
+        android:onClick="sendMessage"
+        android:width="80dp" />
 
     <EditText
-        android:id="@+id/chatLog"
+        android:id="@+id/messageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="28dp"
         android:background="#FFFFE0"
-        android:clickable="false"
-        android:editable="false"
         android:ems="10"
-        android:height="650dp"
+        android:height="80dp"
         android:inputType="textMultiLine"
-        android:longClickable="false"
-        android:width="520dp" />
+        android:width="300dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/chatBox"
+        android:layout_width="540dp"
+        android:layout_height="600dp"
+        android:layout_above="@+id/broadcastBtn"
+        android:layout_alignLeft="@+id/messageTxt"
+        android:layout_marginBottom="52dp"
+        android:background="#FFFFE0"
+        android:text="@string/_string" />
 
 </RelativeLayout>

@@ -4,5 +4,6 @@
     <string name="app_name">Mobile Industry Cast</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="_string">\@string</string>
 
 </resources>
