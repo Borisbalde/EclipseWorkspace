@@ -17,6 +17,7 @@ public final class R {
         public static final int searchbutton=0x7f020003;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int button1=0x7f070000;
         public static final int button2=0x7f070001;
         public static final int button3=0x7f070005;
@@ -24,6 +25,16 @@ public final class R {
         public static final int editText2=0x7f070004;
         public static final int editText3=0x7f070003;
         public static final int menu_settings=0x7f070006;
+=======
+        public static final int broadcastBtn=0x7f070002;
+        public static final int chatLog=0x7f070006;
+        public static final int menu_settings=0x7f070007;
+        public static final int message=0x7f070001;
+        public static final int messageTxt=0x7f070000;
+        public static final int searchBtn=0x7f070003;
+        public static final int searchTxt=0x7f070004;
+        public static final int sendBtn=0x7f070005;
+>>>>>>> Cleaning
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

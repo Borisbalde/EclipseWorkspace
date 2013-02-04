@@ -1,84 +1,89 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messageTxt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF191919"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/button1"
+    <EditText
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="41dp"
-        android:layout_marginRight="41dp"
-        android:background="@drawable/icon2"
-        android:height="80dp"
-        android:width="80dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button1"
-        android:layout_marginRight="31dp"
-        android:layout_toLeftOf="@+id/button1"
-        android:background="@drawable/icon1"
-        android:height="80dp"
-        android:width="80dp" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="37dp"
         android:background="#FFFFE0"
         android:ems="10"
         android:height="80dp"
         android:inputType="textMultiLine"
         android:width="300dp" />
 
-    <EditText
-        android:id="@+id/editText3"
+    <Button
+        android:id="@+id/broadcastBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/message"
+        android:background="@drawable/icon2"
+        android:height="80dp"
+        android:width="80dp" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="#FFFFE0"
-        android:ems="10"
+        android:layout_toRightOf="@+id/searchTxt"
+        android:background="@drawable/searchbutton"
         android:height="20dp"
-        android:width="480dp" >
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:width="20dp" />
 
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText2"
+    <Button
+        android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/broadcastBtn"
+        android:background="@drawable/icon1"
+        android:height="80dp"
+        android:width="80dp" />
+
+    <EditText
+        android:id="@+id/chatLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchTxt"
+        android:layout_marginTop="31dp"
         android:background="#FFFFE0"
+        android:clickable="false"
+        android:editable="false"
         android:ems="10"
         android:height="650dp"
         android:inputType="textMultiLine"
+        android:longClickable="false"
         android:width="520dp" />
 
-    <Button
-        android:id="@+id/button3"
+    <EditText
+        android:id="@+id/searchTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:layout_alignRight="@+id/editText2"
         android:background="@drawable/searchbutton"
         android:height="20dp"
         android:minHeight="20dp"
         android:minWidth="20dp"
         android:width="20dp" />
+=======
+        android:background="#FFFFE0"
+        android:ems="10"
+        android:height="20dp"
+        android:width="480dp" />
+>>>>>>> Cleaning
 
 </RelativeLayout>
