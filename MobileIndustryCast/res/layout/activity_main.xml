@@ -1,17 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/messageTxt"
+    android:id="@+id/ChatRoom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF191919"
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/message"
+        android:id="@+id/messageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/sendBtn"
         android:background="#FFFFE0"
         android:ems="10"
         android:height="80dp"
@@ -23,29 +24,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/message"
+        android:layout_alignRight="@+id/chatLog"
         android:background="@drawable/icon2"
         android:height="80dp"
         android:width="80dp" />
-
-    <Button
-        android:id="@+id/searchBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/searchTxt"
-        android:background="@drawable/searchbutton"
-        android:height="20dp"
-        android:minHeight="20dp"
-        android:minWidth="20dp"
-        android:width="20dp" />
 
     <Button
         android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/broadcastBtn"
+        android:layout_toLeftOf="@+id/broadcastBtn"
         android:background="@drawable/icon1"
         android:height="80dp"
         android:width="80dp" />
@@ -55,8 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/searchTxt"
-        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
         android:background="#FFFFE0"
         android:clickable="false"
         android:editable="false"
@@ -65,25 +54,5 @@
         android:inputType="textMultiLine"
         android:longClickable="false"
         android:width="520dp" />
-
-    <EditText
-        android:id="@+id/searchTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-<<<<<<< HEAD
-        android:layout_alignRight="@+id/editText2"
-        android:background="@drawable/searchbutton"
-        android:height="20dp"
-        android:minHeight="20dp"
-        android:minWidth="20dp"
-        android:width="20dp" />
-=======
-        android:background="#FFFFE0"
-        android:ems="10"
-        android:height="20dp"
-        android:width="480dp" />
->>>>>>> Cleaning
 
 </RelativeLayout>
