@@ -1,8 +1,10 @@
 package com.example.mobileindustrycast;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
@@ -19,4 +21,13 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    public void sendMessage(View v)
+	{
+    	//Here we should have a request sending to XMPP server
+    	EditText chatLog=(EditText) findViewById(R.id.chatLog);
+    	CharSequence newMessage=((EditText) findViewById(R.id.messageTxt)).getText();
+    	//response from xmpp server goes to chatLog field
+    	chatLog.setText(chatLog.getText().append("\n").append(newMessage));  	
+	} 
+   
 }

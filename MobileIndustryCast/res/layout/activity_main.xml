@@ -37,7 +37,8 @@
         android:layout_toLeftOf="@+id/broadcastBtn"
         android:background="@drawable/icon1"
         android:height="80dp"
-        android:width="80dp" />
+        android:width="80dp"
+        android:onClick="sendMessage"/>
 
     <EditText
         android:id="@+id/chatLog"
