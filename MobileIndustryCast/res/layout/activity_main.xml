@@ -48,7 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="22dp"
         android:background="#FFFFE0"
         android:ems="10"
         android:height="20dp"
@@ -74,13 +73,23 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText3"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_alignRight="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText3"
         android:background="@drawable/searchbutton"
         android:height="20dp"
         android:minHeight="20dp"
         android:minWidth="20dp"
         android:width="20dp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button3"
+        android:text="Button" />
 
 </RelativeLayout>
