@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mobileindustrycast"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0"
+     >
+     <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -14,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.mobileindustrycast.MainActivity"
+            android:name="com.mobileindustrycast.view.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +25,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mobileindustrycast.LoginActivity"
+            android:name="com.mobileindustrycast.view.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="com.example.mobileindustrycast.SettingsActivity"
+            android:name="com.mobileindustrycast.model.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
     </application>
