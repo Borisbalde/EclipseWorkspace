@@ -13,7 +13,11 @@ import org.jivesoftware.smack.packet.Message;
  * Gather the xmpp settings and create an XMPPConnection
  */
 public class XMPP_Connect implements MessageListener {
-   
+    //for final server use
+//	private static final int PORT_NUMBER = 5222 ;
+//	private static final String HOST = "openfire.orchestrate";
+//	private static final String SERVICE = "jabber.con";
+	
 	XMPPConnection connection;
 
 	/**
@@ -42,6 +46,7 @@ public class XMPP_Connect implements MessageListener {
 	 
     public void login(String userName, String password) throws XMPPException {
     	//ConnectionConfiguration config = new ConnectionConfiguration("http://velington-pc", 5222,"conference.velington-pc");
+    	//ConnectionConfiguration config = new ConnectionConfiguration(HOST ,PORT_NUMBER, SERVICE);
     	ConnectionConfiguration config = new ConnectionConfiguration("jabber.org", 5222, "jabber.org");
         connection = new XMPPConnection(config);
  
@@ -58,6 +63,9 @@ public class XMPP_Connect implements MessageListener {
     public void processMessage(Chat chat, Message message) {
         if (message.getType() == Message.Type.chat) {
             System.out.println(chat.getParticipant() + " says: " + message.getBody());
+            
+
+            
             //change for activity message
             try {
                 chat.sendMessage(message.getBody() + " echo");

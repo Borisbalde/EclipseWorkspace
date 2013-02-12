@@ -30,13 +30,13 @@ public class LoginActivity extends Activity {
 	 * A dummy authentication store containing known user names and passwords.
 	 * TODO: remove after connecting to a real authentication system.
 	 */
-	private static final String[] DUMMY_CREDENTIALS = new String[] {
-			"foo@example.com:hello", "bar@example.com:world" };
+	private static final String[] DUMMY_CREDENTIALS = new String[] {	
+		"foo@example.com:hello", "bar@example.com:world" };
 
 	/**
 	 * The default email to populate the email field with.
 	 */
-	public static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";
+	public static final String EXTRA_EMAIL = "name@domain.com";
 
 	/**
 	 * Keep track of the login task to ensure we can cancel it if requested.
@@ -201,14 +201,19 @@ public class LoginActivity extends Activity {
 	 * Represents an asynchronous login/registration task used to authenticate
 	 * the user.
 	 */
+	//THIS IS THE METHOD TO MAKE THE LOGIN HAPPEN
 	public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 		@Override
 		protected Boolean doInBackground(Void... params) {
-			// TODO: attempt authentication against a network service.
-
+			
+			
+			//here we can simulate login with local or server database
+			
 			try {
 				// Simulate network access.
+				//we can keep this for local autentication before conection to server
 				Thread.sleep(2000);
+				
 			} catch (InterruptedException e) {
 				return false;
 			}
@@ -222,6 +227,8 @@ public class LoginActivity extends Activity {
 			}
 
 			// TODO: register the new account here.
+			
+			
 			return true;
 		}
 
